@@ -11,7 +11,11 @@ public class Main {
         // Task 1.2 / 7
         System.out.println();
         System.out.println(ANSI_YELLOW + "1.2 Переменные /  Задача 7" + ANSI_RESET);
-        System.out.println();
 
+        int a = 5;
+        int b = 7;
+        a = a ^ b ^ (b = a);
+        System.out.println(ANSI_RED + "a " + ANSI_RESET + "= " + a);
+        System.out.print(ANSI_RED + "b " + ANSI_RESET + "= " + b);
     }
 }
